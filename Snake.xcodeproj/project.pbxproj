@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6B50149824C84668000AEC84 /* CollisionCategories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B50149724C84668000AEC84 /* CollisionCategories.swift */; };
+		6B50149A24C8469C000AEC84 /* ExtensionGameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B50149924C8469C000AEC84 /* ExtensionGameScene.swift */; };
 		6B72B88924C812110043507A /* Apple.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B72B88824C812110043507A /* Apple.swift */; };
 		6B8AC58B24C8148500130400 /* SnakeBodyPart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B8AC58A24C8148500130400 /* SnakeBodyPart.swift */; };
 		6B8AC58D24C815DB00130400 /* SnakeHead.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B8AC58C24C815DB00130400 /* SnakeHead.swift */; };
@@ -20,6 +22,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6B50149724C84668000AEC84 /* CollisionCategories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollisionCategories.swift; sourceTree = "<group>"; };
+		6B50149924C8469C000AEC84 /* ExtensionGameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionGameScene.swift; sourceTree = "<group>"; };
 		6B72B88824C812110043507A /* Apple.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Apple.swift; sourceTree = "<group>"; };
 		6B8AC58A24C8148500130400 /* SnakeBodyPart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnakeBodyPart.swift; sourceTree = "<group>"; };
 		6B8AC58C24C815DB00130400 /* SnakeHead.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnakeHead.swift; sourceTree = "<group>"; };
@@ -66,11 +70,13 @@
 			children = (
 				6BA8191624C7FDD500A98AB8 /* AppDelegate.swift */,
 				6BA8191C24C7FDD500A98AB8 /* GameScene.swift */,
+				6B50149924C8469C000AEC84 /* ExtensionGameScene.swift */,
 				6BA8191E24C7FDD500A98AB8 /* GameViewController.swift */,
 				6B72B88824C812110043507A /* Apple.swift */,
 				6B8AC58A24C8148500130400 /* SnakeBodyPart.swift */,
 				6B8AC58C24C815DB00130400 /* SnakeHead.swift */,
 				6B8AC58E24C8165200130400 /* Snake.swift */,
+				6B50149724C84668000AEC84 /* CollisionCategories.swift */,
 				6BA8192024C7FDD500A98AB8 /* Main.storyboard */,
 				6BA8192324C7FDDB00A98AB8 /* Assets.xcassets */,
 				6BA8192524C7FDDB00A98AB8 /* LaunchScreen.storyboard */,
@@ -156,6 +162,8 @@
 				6BA8191F24C7FDD500A98AB8 /* GameViewController.swift in Sources */,
 				6B8AC58B24C8148500130400 /* SnakeBodyPart.swift in Sources */,
 				6B8AC58F24C8165200130400 /* Snake.swift in Sources */,
+				6B50149A24C8469C000AEC84 /* ExtensionGameScene.swift in Sources */,
+				6B50149824C84668000AEC84 /* CollisionCategories.swift in Sources */,
 				6BA8191724C7FDD500A98AB8 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
