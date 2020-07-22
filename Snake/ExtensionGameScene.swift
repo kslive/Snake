@@ -22,28 +22,28 @@ extension GameScene: SKPhysicsContactDelegate {
     
     func buttonCreate(for view: SKView) {
         let counterClockwiseButton = SKShapeNode()
-        counterClockwiseButton.path = UIBezierPath(ovalIn: CGRect(x: 0,
-                                                                  y: 0,
-                                                                  width: 45,
-                                                                  height: 45)).cgPath
-        counterClockwiseButton.position = CGPoint(x: view.scene!.frame.minX + 30,
-                                                  y: view.scene!.frame.minY + 30)
-        counterClockwiseButton.fillColor = .black
-        counterClockwiseButton.strokeColor = .black
-        counterClockwiseButton.lineWidth = 5
+        counterClockwiseButton.path = UIBezierPath(rect: CGRect(x: 0,
+                                                                y: 0,
+                                                                width: frame.size.width / 2,
+                                                                height: frame.size.height)).cgPath
+        counterClockwiseButton.position = CGPoint(x: view.scene!.frame.minX,
+                                                  y: view.scene!.frame.minY)
+        counterClockwiseButton.fillColor = .white
+        counterClockwiseButton.strokeColor = .white
+        counterClockwiseButton.lineWidth = 1
         counterClockwiseButton.name = "counterClockwiseButton"
         self.addChild(counterClockwiseButton)
         
         let clockwiseButton = SKShapeNode()
-        clockwiseButton.path = UIBezierPath(ovalIn: CGRect(x: 0,
+        clockwiseButton.path = UIBezierPath(rect: CGRect(x: 0,
                                                            y: 0,
-                                                           width: 45,
-                                                           height: 45)).cgPath
-        clockwiseButton.position = CGPoint(x: view.scene!.frame.maxX - 80,
-                                           y: view.scene!.frame.minY + 30)
-        clockwiseButton.fillColor = .black
-        clockwiseButton.strokeColor = .black
-        clockwiseButton.lineWidth = 5
+                                                           width: frame.size.width / 2,
+                                                           height: frame.size.height)).cgPath
+        clockwiseButton.position = CGPoint(x: view.scene!.frame.maxX - frame.size.width / 2,
+                                           y: view.scene!.frame.minY)
+        clockwiseButton.fillColor = .white
+        clockwiseButton.strokeColor = .white
+        clockwiseButton.lineWidth = 1
         clockwiseButton.name = "clockwiseButton"
         self.addChild(clockwiseButton)
     }

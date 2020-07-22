@@ -60,13 +60,23 @@
                                     </button>
                                 </subviews>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoDark" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OEo-Lr-yj2">
+                                <rect key="frame" x="369" y="89" width="25" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <action selector="infoButton:" destination="KfI-Fj-nST" eventType="touchUpInside" id="K9u-J9-5jl"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="bKF-O7-ccO" firstAttribute="centerY" secondItem="xeL-MU-crz" secondAttribute="centerY" id="0o8-24-sf9"/>
                             <constraint firstItem="dH3-8H-JpR" firstAttribute="leading" secondItem="Jv2-X0-xhi" secondAttribute="leading" constant="20" id="2Ej-bP-vzF"/>
+                            <constraint firstItem="Jv2-X0-xhi" firstAttribute="trailing" secondItem="OEo-Lr-yj2" secondAttribute="trailing" constant="20" id="AZj-tK-kgS"/>
                             <constraint firstItem="bKF-O7-ccO" firstAttribute="centerX" secondItem="xeL-MU-crz" secondAttribute="centerX" id="D6i-rc-lFO"/>
                             <constraint firstItem="dH3-8H-JpR" firstAttribute="top" secondItem="Jv2-X0-xhi" secondAttribute="top" id="FiT-YX-J43"/>
+                            <constraint firstItem="OEo-Lr-yj2" firstAttribute="top" secondItem="dH3-8H-JpR" secondAttribute="bottom" constant="10" id="VNz-uB-fwM"/>
                             <constraint firstItem="Jv2-X0-xhi" firstAttribute="trailing" secondItem="dH3-8H-JpR" secondAttribute="trailing" constant="20" id="bJe-aV-t4m"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Jv2-X0-xhi"/>
