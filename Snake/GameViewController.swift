@@ -11,13 +11,15 @@ import SpriteKit
 import GameplayKit
 
 class GameViewController: UIViewController {
-
+    
+    static var moveSpeed: Int = 0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         setupScene(for: view)
     }
-
+    
     func setupScene(for view: UIView) {
         let scene = GameScene(size: view.bounds.size)
         let skView = view as! SKView

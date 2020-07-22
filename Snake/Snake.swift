@@ -11,7 +11,6 @@ import SpriteKit
 
 class Snake: SKShapeNode {
     
-    let moveSpeed = 125.0
     var angle: CGFloat = 0.0
     
     var body = [SnakeBodyPart]()
@@ -45,8 +44,8 @@ class Snake: SKShapeNode {
     
     func moveHead(_ head: SnakeBodyPart) {
         
-        let dx = CGFloat(moveSpeed) * sin(angle)
-        let dy = CGFloat(moveSpeed) * cos(angle)
+        let dx = CGFloat(GameViewController.moveSpeed) * sin(angle)
+        let dy = CGFloat(GameViewController.moveSpeed) * cos(angle)
         let nextPosition = CGPoint(x: head.position.x + dx,
                                    y: head.position.y + dy)
         let moveAction = SKAction.move(to: nextPosition,
