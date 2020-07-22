@@ -33,7 +33,7 @@ extension GameScene: SKPhysicsContactDelegate {
         counterClockwiseButton.lineWidth = 5
         counterClockwiseButton.name = "counterClockwiseButton"
         self.addChild(counterClockwiseButton)
-
+        
         let clockwiseButton = SKShapeNode()
         clockwiseButton.path = UIBezierPath(ovalIn: CGRect(x: 0,
                                                            y: 0,
@@ -64,7 +64,7 @@ extension GameScene: SKPhysicsContactDelegate {
     }
     
     func didBegin(_ contact: SKPhysicsContact) {
-
+        
         let bodyes = contact.bodyA.categoryBitMask | contact.bodyB.categoryBitMask
         let collisionObject = bodyes ^ CollisionCategories.SnakeHead
         switch collisionObject {
@@ -73,14 +73,13 @@ extension GameScene: SKPhysicsContactDelegate {
             snake?.addBodyPart()
             apple?.removeFromParent()
             appleCreate()
-
-// MARK: Home Work. Lesson 8.
             
-// Проверяем, что это стена экрана:
+            // MARK: Home Work. Lesson 8.
+        // Проверяем, что это стена экрана:
         case CollisionCategories.EdgeBody:
-// Удаляем змейку:
+            // Удаляем змейку:
             snake?.removeFromParent()
-// Добавляем змейку:
+            // Добавляем змейку:
             addSnake(for: view!)
         default:
             break
