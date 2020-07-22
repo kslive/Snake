@@ -14,11 +14,12 @@ class GameScene: SKScene {
     var snake: Snake?
     
     override func didMove(to view: SKView) {
-
+        
         sceneCreate(for: view)
         buttonCreate(for: view)
         appleCreate()
         addSnake(for: view)
+        
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -28,6 +29,12 @@ class GameScene: SKScene {
             guard let touchedNode = self.atPoint(touchLocation) as? SKShapeNode,
                 touchedNode.name == "counterClockwiseButton" || touchedNode.name == "clockwiseButton" else { return }
             touchedNode.fillColor = .white
+            
+            if touchedNode.name == "counterClockwiseButton" {
+                snake!.moveCounterClockwise()
+            } else if touchedNode.name == "clockwiseButton" {
+                snake!.moveClockwise()
+            }
         }
     }
     
@@ -45,6 +52,8 @@ class GameScene: SKScene {
     }
     
     override func update(_ currentTime: TimeInterval) {
+    
+        snake!.move()
     }
 }
 
